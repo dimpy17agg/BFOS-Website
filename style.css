@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Cantarell', sans-serif;
+}
+/*nav bar*/
+#navbar{
+    display: flex;
+    height:62px;
+    width:100%;    
+   /* border:2px solid red;*/
+    position: relative;
+    top:0px;
+    left:0px;
+    align-items: center;
+   }
+   /*to set bg we use psuedoclass ::before*/
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.4;
+   }
+   /*specifying styling of logo in nav bar*/
+#logo img{
+    height: 50px;
+    width: 55px;
+    border-radius: 50%;
+    margin:1px 10px;
+    margin-top:1px ;
+    margin-bottom: 1px;
+}
+/*styling menus i.e. liist item of nav bar*/
+#navbar ul{
+    display: flex;    
+}
+#navbar ul li{
+    list-style-type: none; 
+}
+#navbar ul li a{
+display: block;
+ text-decoration: none;
+color: white;
+font-size: 1.1rem;
+font-family: 'Cantarell', sans-serif;
+font-weight: bold;
+margin:5px;
+}
+#navbar ul li a:hover{
+color:black;
+text-decoration: underline;    
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 1px 200px;
+    align-items:center;
+    justify-content: center;
+    height:427px;
+}
+/*set bg of home */
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("images/bg5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    width:100%;
+    top:0px;
+    left: 0px;
+    z-index:-1;
+    opacity : 0.75;
+}
+/*headings in home section*/
+#home h2{
+    color: rgb(87, 49, 49);
+    text-shadow: 1px 1.5px rgb(211, 138, 138);
+}
+#home  h4{
+    color: rgb(53, 54, 53);
+    text-shadow: 0.2px 0.2px rgb(250, 250, 140);
+    font-size: 1.4rem;
+    /*text-align: center;*/
+    font-family: 'Patrick Hand', cursive;
+
+}
+#home p{
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+   text-align: center;
+   padding: 3px;
+   color: rgb(43, 8, 9)
+}
+/*utility class*/
+.h-primary{
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 9px;
+
+}
+/*button in home section*/
+.btn{
+    padding: 6px 15px;
+    border:1px solid black;
+    background-color: rgb(180, 179, 179);
+    color: black;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*utility class*/
+.center{
+    text-align: center;
+}
+/*service section*/
+#services{
+    margin: 28px;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+}
+/*utility class*/
+.h-secondary{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 0px;
+    margin:0px;
+}
+
+#services .box1{
+    border:1px solid rgb(67, 19, 197);
+    height:290px;
+    width: 29%;
+    text-align: center;
+    align-items: center;
+    margin: -3px 10px;
+    padding: 20px;
+    font-family: 'Cantarell', sans-serif;
+    border-radius: 8px;
+   background-color: rgb(232, 221, 251);
+}
+
+#services .box1 img{
+margin: 3px 15px;
+width:210px;
+height:190px;
+}
+
+/*client section*/
+#clients{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#client-section{
+/*height:360px;*/
+position: relative;
+}
+
+#client-section::before{
+    content: "";
+position: absolute;
+background:url("images/bg_n.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width:100%;
+height:100%;
+z-index:-1;
+opacity:0.3;
+
+}
+
+.clients-items{
+padding:65px 20px;    
+}
+
+.clients-items img{
+    height:90px;
+    width:110px;
+    padding: 2px 6px;
+}
+
+/*contact-section*/
+#contact-section{
+    
+    position: relative;
+    height:370px;
+}
+#contact-section::before{
+    content: "";
+    position: absolute;
+    background: url("images/contactus.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact h4{
+    padding: 30px;
+    margin:10px 0px;
+    text-decoration: underline;
+}
+.contact-box{
+    align-items: center;
+    text-align: center;
+    font-size:1.4rem;
+    padding: 60px;
+    color: rgb(19, 58, 19);
+    margin: 4px;
+text-shadow:0.2px 0.3px greenyellow;
+}
+/*footer part*/
+footer{
+    background: black;
+    color: white;
+    padding: 9px;
+}
+

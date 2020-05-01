@@ -1,0 +1,78 @@
+/*this css is used for making site responsive*/
+/*executes when max-width:1211px"*/
+/*nav-bar*/
+#navbar{
+flex-direction: column;
+height:74px;
+}
+
+#navbar ul{
+    margin: -10px;
+}
+#navbar img{
+    padding-top:1px ;
+}
+#navbar ul li a{
+    font-size: 0.9rem;   
+}
+
+/*home section*/
+#home{
+height:380px;
+padding:2px 40px;
+}
+#home::before{
+    height:480px;
+}
+#home p{
+    font-size:0.75rem;
+}
+/*service-section*/
+#services{
+    flex-direction: column;
+} 
+
+#services-box h2{
+    margin-top:25px;
+    margin-bottom: -25px;;
+}
+#services .box1{
+    height:200px;
+    width: auto;
+   padding:30px;
+    margin:25px 30px;
+}
+
+#services .box1 img{
+    height:73px;
+    width:auto;
+}
+/*utility class*/
+.h-primary{
+    font-size:1.65rem;
+}
+
+.btn{
+    font-size: 0.8rem;
+    padding:4px 12px;
+}
+/*client section*/
+#clients{
+    flex-wrap: wrap;
+}
+
+.clients-item img{
+    width:40px;
+    height:45px;
+      
+}
+
+/*contact-section*/
+#contact h4{
+    padding: 20px;
+    margin:6px 0px;
+}
+.contact-box{
+    margin: 3px;
+    margin-top:-26px;
+}
